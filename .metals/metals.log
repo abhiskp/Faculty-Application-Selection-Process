@@ -1,0 +1,2299 @@
+2022.04.26 21:28:04 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\xampp\htdocs\trms\.metals\lsp.trace.json or C:\Users\abhij\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2022.04.26 21:28:05 INFO  logging to file C:\xampp\htdocs\trms\.metals\metals.log
+2022.04.26 21:28:05 INFO  Started: Metals version 0.11.2 in workspace 'C:\xampp\htdocs\trms' for client Visual Studio Code 1.66.2.
+2022.04.26 21:28:05 INFO  Parse release: 1.8.0_292
+2022.04.26 21:28:07 INFO  time: initialize in 1.56s
+2022.04.26 21:28:07 WARN  Build server is not auto-connectable.
+2022.04.26 21:28:07 WARN  no build tool detected in workspace 'C:\xampp\htdocs\trms'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.04.26 21:28:08 WARN  no build target for: D:\6th Sem\PPL\king.scala
+Apr 26, 2022 9:28:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+Apr 26, 2022 9:28:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+Apr 26, 2022 9:31:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 2,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")\r\n"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 24 more
+
+Apr 26, 2022 9:31:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$1(OnTypeFormattingProvider.scala:57)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onTypeFormatting$1(MetalsLanguageServer.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 18 more
+
+Apr 26, 2022 9:31:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+Apr 26, 2022 9:31:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 3,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")\r\n\r\n"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 24 more
+
+Apr 26, 2022 9:31:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$1(OnTypeFormattingProvider.scala:57)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$onTypeFormatting$1(MetalsLanguageServer.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 18 more
+
+Apr 26, 2022 9:31:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+Apr 26, 2022 9:31:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 4,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")\r\n\r\nclass KnightsTour(val dimensions : Pair[int,int], val startPosition : Pair[int,int] ) {\r\n\r\n  val relativeMoves \u003d List( Pair(2,1), Pair(2,-1), Pair(-2,1), Pair(-2,-1), Pair(1,2), Pair(-1,2), Pair(1,-2), Pair(-1,-2) )\r\n  val xPositions \u003d 0 until dimensions._1\r\n  val yPositions \u003d 0 until dimensions._2\r\n  val tourLength \u003d dimensions._1 * dimensions._2;\r\n  var closedTours \u003d 0;\r\n  var openTours \u003d 0;\r\n\r\n  def printPaths() : Unit \u003d {\r\n    printChildPaths( List(startPosition) )\r\n    println( \"There were \" + ( openTours + closedTours ) + \" tours (\" + openTours + \" open, \" + closedTours + \" closed).\" );\r\n  }\r\n\r\n  def printChildPaths( path : List[ Pair[int,int] ] ) : Unit \u003d {\r\n    val moves \u003d getMoves( path.first );\r\n\r\n    if( path.size \u003d\u003d tourLength ) {\r\n      if( moves.contains(startPosition) ) {\r\n        closedTours +\u003d 1\r\n        println( \"Found a closed tour: \" + path )\r\n      } else {\r\n        openTours +\u003d 1\r\n        println( \"Found an open tour: \" + path )\r\n      }\r\n    } else {\r\n      moves.filter( move \u003d\u003e !path.contains(move) ).foreach( move \u003d\u003e printChildPaths( move :: path ) )\r\n    }\r\n  }\r\n\r\n  def getMoves( position: Pair[int,int] ) : List[Pair[int,int]] \u003d {\r\n    relativeMoves.map( move \u003d\u003e Pair(position._1 + move._1, position._2 + move._2 ) ).filter( withinDimensions )\r\n  }\r\n\r\n  def withinDimensions( position: Pair[int,int] ) : boolean \u003d {\r\n    return xPositions.contains( position._1 ) \u0026\u0026 yPositions.contains( position._2 )\r\n  }\r\n\r\n}\r\n\r\nval tour \u003d new KnightsTour( Pair(3,4), Pair(0,0) )\r\ntour.printPaths();"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 24 more
+
+Apr 26, 2022 9:31:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.metals.formatting.RangeFormattingProvider.$anonfun$format$1(RangeFormattingProvider.scala:54)
+	at scala.Option.map(Option.scala:230)
+	at scala.meta.internal.metals.formatting.RangeFormattingProvider.format(RangeFormattingProvider.scala:50)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$rangeFormatting$1(MetalsLanguageServer.scala:1498)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 18 more
+
+Apr 26, 2022 9:31:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+2022.04.26 21:31:53 WARN  no build target for: D:\6th Sem\PPL\king.scala
+2022.04.26 21:36:26 INFO  no build target found for D:\6th Sem\PPL\king.scala. Using presentation compiler with project's scala-library version: 3.1.1
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 25
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 29
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 5,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "/val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")\r\n\r\nclass KnightsTour(val dimensions : Pair[int,int], val startPosition : Pair[int,int] ) {\r\n\r\n  val relativeMoves \u003d List( Pair(2,1), Pair(2,-1), Pair(-2,1), Pair(-2,-1), Pair(1,2), Pair(-1,2), Pair(1,-2), Pair(-1,-2) )\r\n  val xPositions \u003d 0 until dimensions._1\r\n  val yPositions \u003d 0 until dimensions._2\r\n  val tourLength \u003d dimensions._1 * dimensions._2;\r\n  var closedTours \u003d 0;\r\n  var openTours \u003d 0;\r\n\r\n  def printPaths() : Unit \u003d {\r\n    printChildPaths( List(startPosition) )\r\n    println( \"There were \" + ( openTours + closedTours ) + \" tours (\" + openTours + \" open, \" + closedTours + \" closed).\" );\r\n  }\r\n\r\n  def printChildPaths( path : List[ Pair[int,int] ] ) : Unit \u003d {\r\n    val moves \u003d getMoves( path.first );\r\n\r\n    if( path.size \u003d\u003d tourLength ) {\r\n      if( moves.contains(startPosition) ) {\r\n        closedTours +\u003d 1\r\n        println( \"Found a closed tour: \" + path )\r\n      } else {\r\n        openTours +\u003d 1\r\n        println( \"Found an open tour: \" + path )\r\n      }\r\n    } else {\r\n      moves.filter( move \u003d\u003e !path.contains(move) ).foreach( move \u003d\u003e printChildPaths( move :: path ) )\r\n    }\r\n  }\r\n\r\n  def getMoves( position: Pair[int,int] ) : List[Pair[int,int]] \u003d {\r\n    relativeMoves.map( move \u003d\u003e Pair(position._1 + move._1, position._2 + move._2 ) ).filter( withinDimensions )\r\n  }\r\n\r\n  def withinDimensions( position: Pair[int,int] ) : boolean \u003d {\r\n    return xPositions.contains( position._1 ) \u0026\u0026 yPositions.contains( position._2 )\r\n  }\r\n\r\n}\r\n\r\nval tour \u003d new KnightsTour( Pair(3,4), Pair(0,0) )\r\ntour.printPaths();"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 24 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+2022.04.26 21:36:27 WARN  no build target for: D:\6th Sem\PPL\king.scala
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 31
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 32
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 6,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "/*val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")\r\n\r\nclass KnightsTour(val dimensions : Pair[int,int], val startPosition : Pair[int,int] ) {\r\n\r\n  val relativeMoves \u003d List( Pair(2,1), Pair(2,-1), Pair(-2,1), Pair(-2,-1), Pair(1,2), Pair(-1,2), Pair(1,-2), Pair(-1,-2) )\r\n  val xPositions \u003d 0 until dimensions._1\r\n  val yPositions \u003d 0 until dimensions._2\r\n  val tourLength \u003d dimensions._1 * dimensions._2;\r\n  var closedTours \u003d 0;\r\n  var openTours \u003d 0;\r\n\r\n  def printPaths() : Unit \u003d {\r\n    printChildPaths( List(startPosition) )\r\n    println( \"There were \" + ( openTours + closedTours ) + \" tours (\" + openTours + \" open, \" + closedTours + \" closed).\" );\r\n  }\r\n\r\n  def printChildPaths( path : List[ Pair[int,int] ] ) : Unit \u003d {\r\n    val moves \u003d getMoves( path.first );\r\n\r\n    if( path.size \u003d\u003d tourLength ) {\r\n      if( moves.contains(startPosition) ) {\r\n        closedTours +\u003d 1\r\n        println( \"Found a closed tour: \" + path )\r\n      } else {\r\n        openTours +\u003d 1\r\n        println( \"Found an open tour: \" + path )\r\n      }\r\n    } else {\r\n      moves.filter( move \u003d\u003e !path.contains(move) ).foreach( move \u003d\u003e printChildPaths( move :: path ) )\r\n    }\r\n  }\r\n\r\n  def getMoves( position: Pair[int,int] ) : List[Pair[int,int]] \u003d {\r\n    relativeMoves.map( move \u003d\u003e Pair(position._1 + move._1, position._2 + move._2 ) ).filter( withinDimensions )\r\n  }\r\n\r\n  def withinDimensions( position: Pair[int,int] ) : boolean \u003d {\r\n    return xPositions.contains( position._1 ) \u0026\u0026 yPositions.contains( position._2 )\r\n  }\r\n\r\n}\r\n\r\nval tour \u003d new KnightsTour( Pair(3,4), Pair(0,0) )\r\ntour.printPaths();"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 24 more
+
+2022.04.26 21:36:27 WARN  no build target for: D:\6th Sem\PPL\king.scala
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 37
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 7,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "/*val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")*\r\n\r\nclass KnightsTour(val dimensions : Pair[int,int], val startPosition : Pair[int,int] ) {\r\n\r\n  val relativeMoves \u003d List( Pair(2,1), Pair(2,-1), Pair(-2,1), Pair(-2,-1), Pair(1,2), Pair(-1,2), Pair(1,-2), Pair(-1,-2) )\r\n  val xPositions \u003d 0 until dimensions._1\r\n  val yPositions \u003d 0 until dimensions._2\r\n  val tourLength \u003d dimensions._1 * dimensions._2;\r\n  var closedTours \u003d 0;\r\n  var openTours \u003d 0;\r\n\r\n  def printPaths() : Unit \u003d {\r\n    printChildPaths( List(startPosition) )\r\n    println( \"There were \" + ( openTours + closedTours ) + \" tours (\" + openTours + \" open, \" + closedTours + \" closed).\" );\r\n  }\r\n\r\n  def printChildPaths( path : List[ Pair[int,int] ] ) : Unit \u003d {\r\n    val moves \u003d getMoves( path.first );\r\n\r\n    if( path.size \u003d\u003d tourLength ) {\r\n      if( moves.contains(startPosition) ) {\r\n        closedTours +\u003d 1\r\n        println( \"Found a closed tour: \" + path )\r\n      } else {\r\n        openTours +\u003d 1\r\n        println( \"Found an open tour: \" + path )\r\n      }\r\n    } else {\r\n      moves.filter( move \u003d\u003e !path.contains(move) ).foreach( move \u003d\u003e printChildPaths( move :: path ) )\r\n    }\r\n  }\r\n\r\n  def getMoves( position: Pair[int,int] ) : List[Pair[int,int]] \u003d {\r\n    relativeMoves.map( move \u003d\u003e Pair(position._1 + move._1, position._2 + move._2 ) ).filter( withinDimensions )\r\n  }\r\n\r\n  def withinDimensions( position: Pair[int,int] ) : boolean \u003d {\r\n    return xPositions.contains( position._1 ) \u0026\u0026 yPositions.contains( position._2 )\r\n  }\r\n\r\n}\r\n\r\nval tour \u003d new KnightsTour( Pair(3,4), Pair(0,0) )\r\ntour.printPaths();"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 24 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 39
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 8,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "/*val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")*/\r\n\r\nclass KnightsTour(val dimensions : Pair[int,int], val startPosition : Pair[int,int] ) {\r\n\r\n  val relativeMoves \u003d List( Pair(2,1), Pair(2,-1), Pair(-2,1), Pair(-2,-1), Pair(1,2), Pair(-1,2), Pair(1,-2), Pair(-1,-2) )\r\n  val xPositions \u003d 0 until dimensions._1\r\n  val yPositions \u003d 0 until dimensions._2\r\n  val tourLength \u003d dimensions._1 * dimensions._2;\r\n  var closedTours \u003d 0;\r\n  var openTours \u003d 0;\r\n\r\n  def printPaths() : Unit \u003d {\r\n    printChildPaths( List(startPosition) )\r\n    println( \"There were \" + ( openTours + closedTours ) + \" tours (\" + openTours + \" open, \" + closedTours + \" closed).\" );\r\n  }\r\n\r\n  def printChildPaths( path : List[ Pair[int,int] ] ) : Unit \u003d {\r\n    val moves \u003d getMoves( path.first );\r\n\r\n    if( path.size \u003d\u003d tourLength ) {\r\n      if( moves.contains(startPosition) ) {\r\n        closedTours +\u003d 1\r\n        println( \"Found a closed tour: \" + path )\r\n      } else {\r\n        openTours +\u003d 1\r\n        println( \"Found an open tour: \" + path )\r\n      }\r\n    } else {\r\n      moves.filter( move \u003d\u003e !path.contains(move) ).foreach( move \u003d\u003e printChildPaths( move :: path ) )\r\n    }\r\n  }\r\n\r\n  def getMoves( position: Pair[int,int] ) : List[Pair[int,int]] \u003d {\r\n    relativeMoves.map( move \u003d\u003e Pair(position._1 + move._1, position._2 + move._2 ) ).filter( withinDimensions )\r\n  }\r\n\r\n  def withinDimensions( position: Pair[int,int] ) : boolean \u003d {\r\n    return xPositions.contains( position._1 ) \u0026\u0026 yPositions.contains( position._2 )\r\n  }\r\n\r\n}\r\n\r\nval tour \u003d new KnightsTour( Pair(3,4), Pair(0,0) )\r\ntour.printPaths();"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 24 more
+
+2022.04.26 21:36:27 WARN  no build target for: D:\6th Sem\PPL\king.scala
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+2022.04.26 21:36:27 WARN  no build target for: D:\6th Sem\PPL\king.scala
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 45
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 46
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 9,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "/*val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")*/\r\n/\r\nclass KnightsTour(val dimensions : Pair[int,int], val startPosition : Pair[int,int] ) {\r\n\r\n  val relativeMoves \u003d List( Pair(2,1), Pair(2,-1), Pair(-2,1), Pair(-2,-1), Pair(1,2), Pair(-1,2), Pair(1,-2), Pair(-1,-2) )\r\n  val xPositions \u003d 0 until dimensions._1\r\n  val yPositions \u003d 0 until dimensions._2\r\n  val tourLength \u003d dimensions._1 * dimensions._2;\r\n  var closedTours \u003d 0;\r\n  var openTours \u003d 0;\r\n\r\n  def printPaths() : Unit \u003d {\r\n    printChildPaths( List(startPosition) )\r\n    println( \"There were \" + ( openTours + closedTours ) + \" tours (\" + openTours + \" open, \" + closedTours + \" closed).\" );\r\n  }\r\n\r\n  def printChildPaths( path : List[ Pair[int,int] ] ) : Unit \u003d {\r\n    val moves \u003d getMoves( path.first );\r\n\r\n    if( path.size \u003d\u003d tourLength ) {\r\n      if( moves.contains(startPosition) ) {\r\n        closedTours +\u003d 1\r\n        println( \"Found a closed tour: \" + path )\r\n      } else {\r\n        openTours +\u003d 1\r\n        println( \"Found an open tour: \" + path )\r\n      }\r\n    } else {\r\n      moves.filter( move \u003d\u003e !path.contains(move) ).foreach( move \u003d\u003e printChildPaths( move :: path ) )\r\n    }\r\n  }\r\n\r\n  def getMoves( position: Pair[int,int] ) : List[Pair[int,int]] \u003d {\r\n    relativeMoves.map( move \u003d\u003e Pair(position._1 + move._1, position._2 + move._2 ) ).filter( withinDimensions )\r\n  }\r\n\r\n  def withinDimensions( position: Pair[int,int] ) : boolean \u003d {\r\n    return xPositions.contains( position._1 ) \u0026\u0026 yPositions.contains( position._2 )\r\n  }\r\n\r\n}\r\n\r\nval tour \u003d new KnightsTour( Pair(3,4), Pair(0,0) )\r\ntour.printPaths();"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 24 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 10,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "/*val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")*/\r\n/*\r\nclass KnightsTour(val dimensions : Pair[int,int], val startPosition : Pair[int,int] ) {\r\n\r\n  val relativeMoves \u003d List( Pair(2,1), Pair(2,-1), Pair(-2,1), Pair(-2,-1), Pair(1,2), Pair(-1,2), Pair(1,-2), Pair(-1,-2) )\r\n  val xPositions \u003d 0 until dimensions._1\r\n  val yPositions \u003d 0 until dimensions._2\r\n  val tourLength \u003d dimensions._1 * dimensions._2;\r\n  var closedTours \u003d 0;\r\n  var openTours \u003d 0;\r\n\r\n  def printPaths() : Unit \u003d {\r\n    printChildPaths( List(startPosition) )\r\n    println( \"There were \" + ( openTours + closedTours ) + \" tours (\" + openTours + \" open, \" + closedTours + \" closed).\" );\r\n  }\r\n\r\n  def printChildPaths( path : List[ Pair[int,int] ] ) : Unit \u003d {\r\n    val moves \u003d getMoves( path.first );\r\n\r\n    if( path.size \u003d\u003d tourLength ) {\r\n      if( moves.contains(startPosition) ) {\r\n        closedTours +\u003d 1\r\n        println( \"Found a closed tour: \" + path )\r\n      } else {\r\n        openTours +\u003d 1\r\n        println( \"Found an open tour: \" + path )\r\n      }\r\n    } else {\r\n      moves.filter( move \u003d\u003e !path.contains(move) ).foreach( move \u003d\u003e printChildPaths( move :: path ) )\r\n    }\r\n  }\r\n\r\n  def getMoves( position: Pair[int,int] ) : List[Pair[int,int]] \u003d {\r\n    relativeMoves.map( move \u003d\u003e Pair(position._1 + move._1, position._2 + move._2 ) ).filter( withinDimensions )\r\n  }\r\n\r\n  def withinDimensions( position: Pair[int,int] ) : boolean \u003d {\r\n    return xPositions.contains( position._1 ) \u0026\u0026 yPositions.contains( position._2 )\r\n  }\r\n\r\n}\r\n\r\nval tour \u003d new KnightsTour( Pair(3,4), Pair(0,0) )\r\ntour.printPaths();"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 24 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+2022.04.26 21:36:27 WARN  no build target for: D:\6th Sem\PPL\king.scala
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 49
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 57
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 56
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 11,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "/*val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")*/\r\n/*\r\nclass KnightsTour(val dimensions : Pair[int,int], val startPosition : Pair[int,int] ) {\r\n\r\n  val relativeMoves \u003d List( Pair(2,1), Pair(2,-1), Pair(-2,1), Pair(-2,-1), Pair(1,2), Pair(-1,2), Pair(1,-2), Pair(-1,-2) )\r\n  val xPositions \u003d 0 until dimensions._1\r\n  val yPositions \u003d 0 until dimensions._2\r\n  val tourLength \u003d dimensions._1 * dimensions._2;\r\n  var closedTours \u003d 0;\r\n  var openTours \u003d 0;\r\n\r\n  def printPaths() : Unit \u003d {\r\n    printChildPaths( List(startPosition) )\r\n    println( \"There were \" + ( openTours + closedTours ) + \" tours (\" + openTours + \" open, \" + closedTours + \" closed).\" );\r\n  }\r\n\r\n  def printChildPaths( path : List[ Pair[int,int] ] ) : Unit \u003d {\r\n    val moves \u003d getMoves( path.first );\r\n\r\n    if( path.size \u003d\u003d tourLength ) {\r\n      if( moves.contains(startPosition) ) {\r\n        closedTours +\u003d 1\r\n        println( \"Found a closed tour: \" + path )\r\n      } else {\r\n        openTours +\u003d 1\r\n        println( \"Found an open tour: \" + path )\r\n      }\r\n    } else {\r\n      moves.filter( move \u003d\u003e !path.contains(move) ).foreach( move \u003d\u003e printChildPaths( move :: path ) )\r\n    }\r\n  }\r\n\r\n  def getMoves( position: Pair[int,int] ) : List[Pair[int,int]] \u003d {\r\n    relativeMoves.map( move \u003d\u003e Pair(position._1 + move._1, position._2 + move._2 ) ).filter( withinDimensions )\r\n  }\r\n\r\n  def withinDimensions( position: Pair[int,int] ) : boolean \u003d {\r\n    return xPositions.contains( position._1 ) \u0026\u0026 yPositions.contains( position._2 )\r\n  }\r\n\r\n}\r\n\r\nval tour \u003d new KnightsTour( Pair(3,4), Pair(0,0) )\r\ntour.printPaths();*"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 24 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 64
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 12,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "/*val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")*/\r\n/*\r\nclass KnightsTour(val dimensions : Pair[int,int], val startPosition : Pair[int,int] ) {\r\n\r\n  val relativeMoves \u003d List( Pair(2,1), Pair(2,-1), Pair(-2,1), Pair(-2,-1), Pair(1,2), Pair(-1,2), Pair(1,-2), Pair(-1,-2) )\r\n  val xPositions \u003d 0 until dimensions._1\r\n  val yPositions \u003d 0 until dimensions._2\r\n  val tourLength \u003d dimensions._1 * dimensions._2;\r\n  var closedTours \u003d 0;\r\n  var openTours \u003d 0;\r\n\r\n  def printPaths() : Unit \u003d {\r\n    printChildPaths( List(startPosition) )\r\n    println( \"There were \" + ( openTours + closedTours ) + \" tours (\" + openTours + \" open, \" + closedTours + \" closed).\" );\r\n  }\r\n\r\n  def printChildPaths( path : List[ Pair[int,int] ] ) : Unit \u003d {\r\n    val moves \u003d getMoves( path.first );\r\n\r\n    if( path.size \u003d\u003d tourLength ) {\r\n      if( moves.contains(startPosition) ) {\r\n        closedTours +\u003d 1\r\n        println( \"Found a closed tour: \" + path )\r\n      } else {\r\n        openTours +\u003d 1\r\n        println( \"Found an open tour: \" + path )\r\n      }\r\n    } else {\r\n      moves.filter( move \u003d\u003e !path.contains(move) ).foreach( move \u003d\u003e printChildPaths( move :: path ) )\r\n    }\r\n  }\r\n\r\n  def getMoves( position: Pair[int,int] ) : List[Pair[int,int]] \u003d {\r\n    relativeMoves.map( move \u003d\u003e Pair(position._1 + move._1, position._2 + move._2 ) ).filter( withinDimensions )\r\n  }\r\n\r\n  def withinDimensions( position: Pair[int,int] ) : boolean \u003d {\r\n    return xPositions.contains( position._1 ) \u0026\u0026 yPositions.contains( position._2 )\r\n  }\r\n\r\n}\r\n\r\nval tour \u003d new KnightsTour( Pair(3,4), Pair(0,0) )\r\ntour.printPaths();*/"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 24 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+2022.04.26 21:36:27 WARN  no build target for: D:\6th Sem\PPL\king.scala
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 67
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 66
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 14,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "/*val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")\r\n/*\r\nclass KnightsTour(val dimensions : Pair[int,int], val startPosition : Pair[int,int] ) {\r\n\r\n  val relativeMoves \u003d List( Pair(2,1), Pair(2,-1), Pair(-2,1), Pair(-2,-1), Pair(1,2), Pair(-1,2), Pair(1,-2), Pair(-1,-2) )\r\n  val xPositions \u003d 0 until dimensions._1\r\n  val yPositions \u003d 0 until dimensions._2\r\n  val tourLength \u003d dimensions._1 * dimensions._2;\r\n  var closedTours \u003d 0;\r\n  var openTours \u003d 0;\r\n\r\n  def printPaths() : Unit \u003d {\r\n    printChildPaths( List(startPosition) )\r\n    println( \"There were \" + ( openTours + closedTours ) + \" tours (\" + openTours + \" open, \" + closedTours + \" closed).\" );\r\n  }\r\n\r\n  def printChildPaths( path : List[ Pair[int,int] ] ) : Unit \u003d {\r\n    val moves \u003d getMoves( path.first );\r\n\r\n    if( path.size \u003d\u003d tourLength ) {\r\n      if( moves.contains(startPosition) ) {\r\n        closedTours +\u003d 1\r\n        println( \"Found a closed tour: \" + path )\r\n      } else {\r\n        openTours +\u003d 1\r\n        println( \"Found an open tour: \" + path )\r\n      }\r\n    } else {\r\n      moves.filter( move \u003d\u003e !path.contains(move) ).foreach( move \u003d\u003e printChildPaths( move :: path ) )\r\n    }\r\n  }\r\n\r\n  def getMoves( position: Pair[int,int] ) : List[Pair[int,int]] \u003d {\r\n    relativeMoves.map( move \u003d\u003e Pair(position._1 + move._1, position._2 + move._2 ) ).filter( withinDimensions )\r\n  }\r\n\r\n  def withinDimensions( position: Pair[int,int] ) : boolean \u003d {\r\n    return xPositions.contains( position._1 ) \u0026\u0026 yPositions.contains( position._2 )\r\n  }\r\n\r\n}\r\n\r\nval tour \u003d new KnightsTour( Pair(3,4), Pair(0,0) )\r\ntour.printPaths();*/"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 24 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 72
+2022.04.26 21:36:27 WARN  no build target for: D:\6th Sem\PPL\king.scala
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 74
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 71
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 16,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")\r\n/*\r\nclass KnightsTour(val dimensions : Pair[int,int], val startPosition : Pair[int,int] ) {\r\n\r\n  val relativeMoves \u003d List( Pair(2,1), Pair(2,-1), Pair(-2,1), Pair(-2,-1), Pair(1,2), Pair(-1,2), Pair(1,-2), Pair(-1,-2) )\r\n  val xPositions \u003d 0 until dimensions._1\r\n  val yPositions \u003d 0 until dimensions._2\r\n  val tourLength \u003d dimensions._1 * dimensions._2;\r\n  var closedTours \u003d 0;\r\n  var openTours \u003d 0;\r\n\r\n  def printPaths() : Unit \u003d {\r\n    printChildPaths( List(startPosition) )\r\n    println( \"There were \" + ( openTours + closedTours ) + \" tours (\" + openTours + \" open, \" + closedTours + \" closed).\" );\r\n  }\r\n\r\n  def printChildPaths( path : List[ Pair[int,int] ] ) : Unit \u003d {\r\n    val moves \u003d getMoves( path.first );\r\n\r\n    if( path.size \u003d\u003d tourLength ) {\r\n      if( moves.contains(startPosition) ) {\r\n        closedTours +\u003d 1\r\n        println( \"Found a closed tour: \" + path )\r\n      } else {\r\n        openTours +\u003d 1\r\n        println( \"Found an open tour: \" + path )\r\n      }\r\n    } else {\r\n      moves.filter( move \u003d\u003e !path.contains(move) ).foreach( move \u003d\u003e printChildPaths( move :: path ) )\r\n    }\r\n  }\r\n\r\n  def getMoves( position: Pair[int,int] ) : List[Pair[int,int]] \u003d {\r\n    relativeMoves.map( move \u003d\u003e Pair(position._1 + move._1, position._2 + move._2 ) ).filter( withinDimensions )\r\n  }\r\n\r\n  def withinDimensions( position: Pair[int,int] ) : boolean \u003d {\r\n    return xPositions.contains( position._1 ) \u0026\u0026 yPositions.contains( position._2 )\r\n  }\r\n\r\n}\r\n\r\nval tour \u003d new KnightsTour( Pair(3,4), Pair(0,0) )\r\ntour.printPaths();*/"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 24 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+2022.04.26 21:36:27 WARN  no build target for: D:\6th Sem\PPL\king.scala
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 59
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 80
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 79
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 17,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")*\r\n/*\r\nclass KnightsTour(val dimensions : Pair[int,int], val startPosition : Pair[int,int] ) {\r\n\r\n  val relativeMoves \u003d List( Pair(2,1), Pair(2,-1), Pair(-2,1), Pair(-2,-1), Pair(1,2), Pair(-1,2), Pair(1,-2), Pair(-1,-2) )\r\n  val xPositions \u003d 0 until dimensions._1\r\n  val yPositions \u003d 0 until dimensions._2\r\n  val tourLength \u003d dimensions._1 * dimensions._2;\r\n  var closedTours \u003d 0;\r\n  var openTours \u003d 0;\r\n\r\n  def printPaths() : Unit \u003d {\r\n    printChildPaths( List(startPosition) )\r\n    println( \"There were \" + ( openTours + closedTours ) + \" tours (\" + openTours + \" open, \" + closedTours + \" closed).\" );\r\n  }\r\n\r\n  def printChildPaths( path : List[ Pair[int,int] ] ) : Unit \u003d {\r\n    val moves \u003d getMoves( path.first );\r\n\r\n    if( path.size \u003d\u003d tourLength ) {\r\n      if( moves.contains(startPosition) ) {\r\n        closedTours +\u003d 1\r\n        println( \"Found a closed tour: \" + path )\r\n      } else {\r\n        openTours +\u003d 1\r\n        println( \"Found an open tour: \" + path )\r\n      }\r\n    } else {\r\n      moves.filter( move \u003d\u003e !path.contains(move) ).foreach( move \u003d\u003e printChildPaths( move :: path ) )\r\n    }\r\n  }\r\n\r\n  def getMoves( position: Pair[int,int] ) : List[Pair[int,int]] \u003d {\r\n    relativeMoves.map( move \u003d\u003e Pair(position._1 + move._1, position._2 + move._2 ) ).filter( withinDimensions )\r\n  }\r\n\r\n  def withinDimensions( position: Pair[int,int] ) : boolean \u003d {\r\n    return xPositions.contains( position._1 ) \u0026\u0026 yPositions.contains( position._2 )\r\n  }\r\n\r\n}\r\n\r\nval tour \u003d new KnightsTour( Pair(3,4), Pair(0,0) )\r\ntour.printPaths();*/"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 24 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 89
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 18,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")*/\r\n/*\r\nclass KnightsTour(val dimensions : Pair[int,int], val startPosition : Pair[int,int] ) {\r\n\r\n  val relativeMoves \u003d List( Pair(2,1), Pair(2,-1), Pair(-2,1), Pair(-2,-1), Pair(1,2), Pair(-1,2), Pair(1,-2), Pair(-1,-2) )\r\n  val xPositions \u003d 0 until dimensions._1\r\n  val yPositions \u003d 0 until dimensions._2\r\n  val tourLength \u003d dimensions._1 * dimensions._2;\r\n  var closedTours \u003d 0;\r\n  var openTours \u003d 0;\r\n\r\n  def printPaths() : Unit \u003d {\r\n    printChildPaths( List(startPosition) )\r\n    println( \"There were \" + ( openTours + closedTours ) + \" tours (\" + openTours + \" open, \" + closedTours + \" closed).\" );\r\n  }\r\n\r\n  def printChildPaths( path : List[ Pair[int,int] ] ) : Unit \u003d {\r\n    val moves \u003d getMoves( path.first );\r\n\r\n    if( path.size \u003d\u003d tourLength ) {\r\n      if( moves.contains(startPosition) ) {\r\n        closedTours +\u003d 1\r\n        println( \"Found a closed tour: \" + path )\r\n      } else {\r\n        openTours +\u003d 1\r\n        println( \"Found an open tour: \" + path )\r\n      }\r\n    } else {\r\n      moves.filter( move \u003d\u003e !path.contains(move) ).foreach( move \u003d\u003e printChildPaths( move :: path ) )\r\n    }\r\n  }\r\n\r\n  def getMoves( position: Pair[int,int] ) : List[Pair[int,int]] \u003d {\r\n    relativeMoves.map( move \u003d\u003e Pair(position._1 + move._1, position._2 + move._2 ) ).filter( withinDimensions )\r\n  }\r\n\r\n  def withinDimensions( position: Pair[int,int] ) : boolean \u003d {\r\n    return xPositions.contains( position._1 ) \u0026\u0026 yPositions.contains( position._2 )\r\n  }\r\n\r\n}\r\n\r\nval tour \u003d new KnightsTour( Pair(3,4), Pair(0,0) )\r\ntour.printPaths();*/"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 24 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+2022.04.26 21:36:27 WARN  no build target for: D:\6th Sem\PPL\king.scala
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 92
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 98
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 91
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 20,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")*/\r\n\r\nclass KnightsTour(val dimensions : Pair[int,int], val startPosition : Pair[int,int] ) {\r\n\r\n  val relativeMoves \u003d List( Pair(2,1), Pair(2,-1), Pair(-2,1), Pair(-2,-1), Pair(1,2), Pair(-1,2), Pair(1,-2), Pair(-1,-2) )\r\n  val xPositions \u003d 0 until dimensions._1\r\n  val yPositions \u003d 0 until dimensions._2\r\n  val tourLength \u003d dimensions._1 * dimensions._2;\r\n  var closedTours \u003d 0;\r\n  var openTours \u003d 0;\r\n\r\n  def printPaths() : Unit \u003d {\r\n    printChildPaths( List(startPosition) )\r\n    println( \"There were \" + ( openTours + closedTours ) + \" tours (\" + openTours + \" open, \" + closedTours + \" closed).\" );\r\n  }\r\n\r\n  def printChildPaths( path : List[ Pair[int,int] ] ) : Unit \u003d {\r\n    val moves \u003d getMoves( path.first );\r\n\r\n    if( path.size \u003d\u003d tourLength ) {\r\n      if( moves.contains(startPosition) ) {\r\n        closedTours +\u003d 1\r\n        println( \"Found a closed tour: \" + path )\r\n      } else {\r\n        openTours +\u003d 1\r\n        println( \"Found an open tour: \" + path )\r\n      }\r\n    } else {\r\n      moves.filter( move \u003d\u003e !path.contains(move) ).foreach( move \u003d\u003e printChildPaths( move :: path ) )\r\n    }\r\n  }\r\n\r\n  def getMoves( position: Pair[int,int] ) : List[Pair[int,int]] \u003d {\r\n    relativeMoves.map( move \u003d\u003e Pair(position._1 + move._1, position._2 + move._2 ) ).filter( withinDimensions )\r\n  }\r\n\r\n  def withinDimensions( position: Pair[int,int] ) : boolean \u003d {\r\n    return xPositions.contains( position._1 ) \u0026\u0026 yPositions.contains( position._2 )\r\n  }\r\n\r\n}\r\n\r\nval tour \u003d new KnightsTour( Pair(3,4), Pair(0,0) )\r\ntour.printPaths();*/"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 16 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 24 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+2022.04.26 21:36:27 WARN  no build target for: D:\6th Sem\PPL\king.scala
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 101
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 21,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "/val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")*/\r\n\r\nclass KnightsTour(val dimensions : Pair[int,int], val startPosition : Pair[int,int] ) {\r\n\r\n  val relativeMoves \u003d List( Pair(2,1), Pair(2,-1), Pair(-2,1), Pair(-2,-1), Pair(1,2), Pair(-1,2), Pair(1,-2), Pair(-1,-2) )\r\n  val xPositions \u003d 0 until dimensions._1\r\n  val yPositions \u003d 0 until dimensions._2\r\n  val tourLength \u003d dimensions._1 * dimensions._2;\r\n  var closedTours \u003d 0;\r\n  var openTours \u003d 0;\r\n\r\n  def printPaths() : Unit \u003d {\r\n    printChildPaths( List(startPosition) )\r\n    println( \"There were \" + ( openTours + closedTours ) + \" tours (\" + openTours + \" open, \" + closedTours + \" closed).\" );\r\n  }\r\n\r\n  def printChildPaths( path : List[ Pair[int,int] ] ) : Unit \u003d {\r\n    val moves \u003d getMoves( path.first );\r\n\r\n    if( path.size \u003d\u003d tourLength ) {\r\n      if( moves.contains(startPosition) ) {\r\n        closedTours +\u003d 1\r\n        println( \"Found a closed tour: \" + path )\r\n      } else {\r\n        openTours +\u003d 1\r\n        println( \"Found an open tour: \" + path )\r\n      }\r\n    } else {\r\n      moves.filter( move \u003d\u003e !path.contains(move) ).foreach( move \u003d\u003e printChildPaths( move :: path ) )\r\n    }\r\n  }\r\n\r\n  def getMoves( position: Pair[int,int] ) : List[Pair[int,int]] \u003d {\r\n    relativeMoves.map( move \u003d\u003e Pair(position._1 + move._1, position._2 + move._2 ) ).filter( withinDimensions )\r\n  }\r\n\r\n  def withinDimensions( position: Pair[int,int] ) : boolean \u003d {\r\n    return xPositions.contains( position._1 ) \u0026\u0026 yPositions.contains( position._2 )\r\n  }\r\n\r\n}\r\n\r\nval tour \u003d new KnightsTour( Pair(3,4), Pair(0,0) )\r\ntour.printPaths();*/"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 15 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 23 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 107
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 22,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "/*val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")*/\r\n\r\nclass KnightsTour(val dimensions : Pair[int,int], val startPosition : Pair[int,int] ) {\r\n\r\n  val relativeMoves \u003d List( Pair(2,1), Pair(2,-1), Pair(-2,1), Pair(-2,-1), Pair(1,2), Pair(-1,2), Pair(1,-2), Pair(-1,-2) )\r\n  val xPositions \u003d 0 until dimensions._1\r\n  val yPositions \u003d 0 until dimensions._2\r\n  val tourLength \u003d dimensions._1 * dimensions._2;\r\n  var closedTours \u003d 0;\r\n  var openTours \u003d 0;\r\n\r\n  def printPaths() : Unit \u003d {\r\n    printChildPaths( List(startPosition) )\r\n    println( \"There were \" + ( openTours + closedTours ) + \" tours (\" + openTours + \" open, \" + closedTours + \" closed).\" );\r\n  }\r\n\r\n  def printChildPaths( path : List[ Pair[int,int] ] ) : Unit \u003d {\r\n    val moves \u003d getMoves( path.first );\r\n\r\n    if( path.size \u003d\u003d tourLength ) {\r\n      if( moves.contains(startPosition) ) {\r\n        closedTours +\u003d 1\r\n        println( \"Found a closed tour: \" + path )\r\n      } else {\r\n        openTours +\u003d 1\r\n        println( \"Found an open tour: \" + path )\r\n      }\r\n    } else {\r\n      moves.filter( move \u003d\u003e !path.contains(move) ).foreach( move \u003d\u003e printChildPaths( move :: path ) )\r\n    }\r\n  }\r\n\r\n  def getMoves( position: Pair[int,int] ) : List[Pair[int,int]] \u003d {\r\n    relativeMoves.map( move \u003d\u003e Pair(position._1 + move._1, position._2 + move._2 ) ).filter( withinDimensions )\r\n  }\r\n\r\n  def withinDimensions( position: Pair[int,int] ) : boolean \u003d {\r\n    return xPositions.contains( position._1 ) \u0026\u0026 yPositions.contains( position._2 )\r\n  }\r\n\r\n}\r\n\r\nval tour \u003d new KnightsTour( Pair(3,4), Pair(0,0) )\r\ntour.printPaths();*/"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 15 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 23 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+2022.04.26 21:36:27 WARN  no build target for: D:\6th Sem\PPL\king.scala
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 111
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 110
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 24,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "/*val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")*/\r\n\r\nclass KnightsTour(val dimensions : Pair[int,int], val startPosition : Pair[int,int] ) {\r\n\r\n  val relativeMoves \u003d List( Pair(2,1), Pair(2,-1), Pair(-2,1), Pair(-2,-1), Pair(1,2), Pair(-1,2), Pair(1,-2), Pair(-1,-2) )\r\n  val xPositions \u003d 0 until dimensions._1\r\n  val yPositions \u003d 0 until dimensions._2\r\n  val tourLength \u003d dimensions._1 * dimensions._2;\r\n  var closedTours \u003d 0;\r\n  var openTours \u003d 0;\r\n\r\n  def printPaths() : Unit \u003d {\r\n    printChildPaths( List(startPosition) )\r\n    println( \"There were \" + ( openTours + closedTours ) + \" tours (\" + openTours + \" open, \" + closedTours + \" closed).\" );\r\n  }\r\n\r\n  def printChildPaths( path : List[ Pair[int,int] ] ) : Unit \u003d {\r\n    val moves \u003d getMoves( path.first );\r\n\r\n    if( path.size \u003d\u003d tourLength ) {\r\n      if( moves.contains(startPosition) ) {\r\n        closedTours +\u003d 1\r\n        println( \"Found a closed tour: \" + path )\r\n      } else {\r\n        openTours +\u003d 1\r\n        println( \"Found an open tour: \" + path )\r\n      }\r\n    } else {\r\n      moves.filter( move \u003d\u003e !path.contains(move) ).foreach( move \u003d\u003e printChildPaths( move :: path ) )\r\n    }\r\n  }\r\n\r\n  def getMoves( position: Pair[int,int] ) : List[Pair[int,int]] \u003d {\r\n    relativeMoves.map( move \u003d\u003e Pair(position._1 + move._1, position._2 + move._2 ) ).filter( withinDimensions )\r\n  }\r\n\r\n  def withinDimensions( position: Pair[int,int] ) : boolean \u003d {\r\n    return xPositions.contains( position._1 ) \u0026\u0026 yPositions.contains( position._2 )\r\n  }\r\n\r\n}\r\n\r\nval tour \u003d new KnightsTour( Pair(3,4), Pair(0,0) )\r\ntour.printPaths();"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 15 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 23 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+2022.04.26 21:36:27 WARN  no build target for: D:\6th Sem\PPL\king.scala
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 84
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 115
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 114
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 26,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "/*val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")*/\r\n\r\nclass KnightsTour(val dimensions : Pair[int,int], val startPosition : Pair[int,int] )\u003d{\r\n\r\n  val relativeMoves \u003d List( Pair(2,1), Pair(2,-1), Pair(-2,1), Pair(-2,-1), Pair(1,2), Pair(-1,2), Pair(1,-2), Pair(-1,-2) )\r\n  val xPositions \u003d 0 until dimensions._1\r\n  val yPositions \u003d 0 until dimensions._2\r\n  val tourLength \u003d dimensions._1 * dimensions._2;\r\n  var closedTours \u003d 0;\r\n  var openTours \u003d 0;\r\n\r\n  def printPaths() : Unit \u003d {\r\n    printChildPaths( List(startPosition) )\r\n    println( \"There were \" + ( openTours + closedTours ) + \" tours (\" + openTours + \" open, \" + closedTours + \" closed).\" );\r\n  }\r\n\r\n  def printChildPaths( path : List[ Pair[int,int] ] ) : Unit \u003d {\r\n    val moves \u003d getMoves( path.first );\r\n\r\n    if( path.size \u003d\u003d tourLength ) {\r\n      if( moves.contains(startPosition) ) {\r\n        closedTours +\u003d 1\r\n        println( \"Found a closed tour: \" + path )\r\n      } else {\r\n        openTours +\u003d 1\r\n        println( \"Found an open tour: \" + path )\r\n      }\r\n    } else {\r\n      moves.filter( move \u003d\u003e !path.contains(move) ).foreach( move \u003d\u003e printChildPaths( move :: path ) )\r\n    }\r\n  }\r\n\r\n  def getMoves( position: Pair[int,int] ) : List[Pair[int,int]] \u003d {\r\n    relativeMoves.map( move \u003d\u003e Pair(position._1 + move._1, position._2 + move._2 ) ).filter( withinDimensions )\r\n  }\r\n\r\n  def withinDimensions( position: Pair[int,int] ) : boolean \u003d {\r\n    return xPositions.contains( position._1 ) \u0026\u0026 yPositions.contains( position._2 )\r\n  }\r\n\r\n}\r\n\r\nval tour \u003d new KnightsTour( Pair(3,4), Pair(0,0) )\r\ntour.printPaths();"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 15 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 23 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+2022.04.26 21:36:27 WARN  no build target for: D:\6th Sem\PPL\king.scala
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 117
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 122
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 123
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 27,
+      "uri": "file:///d%3A/6th%20Sem/PPL/king.scala"
+    },
+    "contentChanges": [
+      {
+        "text": "/*val b\u003dSeq.tabulate(8,8,8,8)((x,y,z,t)\u003d\u003e(1L\u003c\u003c(x*8+y),1L\u003c\u003c(z*8+t),f\"${97+z}%c${49+t}%c\",(x-z)*(x-z)+(y-t)*(y-t)\u003d\u003d5)).flatten.flatten.flatten.filter(_._4).groupBy(_._1)\r\ndef f(p:Long,s:Long,v:Any){if(-1L!\u003ds)b(p).foreach(x\u003d\u003eif((s\u0026x._2)\u003d\u003d0)f(x._2,s|x._2,v+x._3))else println(v)}\r\nf(1,1,\"a1\")*/\r\n\r\nclass KnightsTour(val dimensions : Pair[int,int], val startPosition : Pair[int,int] ){\r\n\r\n  val relativeMoves \u003d List( Pair(2,1), Pair(2,-1), Pair(-2,1), Pair(-2,-1), Pair(1,2), Pair(-1,2), Pair(1,-2), Pair(-1,-2) )\r\n  val xPositions \u003d 0 until dimensions._1\r\n  val yPositions \u003d 0 until dimensions._2\r\n  val tourLength \u003d dimensions._1 * dimensions._2;\r\n  var closedTours \u003d 0;\r\n  var openTours \u003d 0;\r\n\r\n  def printPaths() : Unit \u003d {\r\n    printChildPaths( List(startPosition) )\r\n    println( \"There were \" + ( openTours + closedTours ) + \" tours (\" + openTours + \" open, \" + closedTours + \" closed).\" );\r\n  }\r\n\r\n  def printChildPaths( path : List[ Pair[int,int] ] ) : Unit \u003d {\r\n    val moves \u003d getMoves( path.first );\r\n\r\n    if( path.size \u003d\u003d tourLength ) {\r\n      if( moves.contains(startPosition) ) {\r\n        closedTours +\u003d 1\r\n        println( \"Found a closed tour: \" + path )\r\n      } else {\r\n        openTours +\u003d 1\r\n        println( \"Found an open tour: \" + path )\r\n      }\r\n    } else {\r\n      moves.filter( move \u003d\u003e !path.contains(move) ).foreach( move \u003d\u003e printChildPaths( move :: path ) )\r\n    }\r\n  }\r\n\r\n  def getMoves( position: Pair[int,int] ) : List[Pair[int,int]] \u003d {\r\n    relativeMoves.map( move \u003d\u003e Pair(position._1 + move._1, position._2 + move._2 ) ).filter( withinDimensions )\r\n  }\r\n\r\n  def withinDimensions( position: Pair[int,int] ) : boolean \u003d {\r\n    return xPositions.contains( position._1 ) \u0026\u0026 yPositions.contains( position._2 )\r\n  }\r\n\r\n}\r\n\r\nval tour \u003d new KnightsTour( Pair(3,4), Pair(0,0) )\r\ntour.printPaths();"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:112)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1193)
+	... 15 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 23 more
+
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:103)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:99)
+	at scala.meta.internal.parsing.Trees.tokenized(Trees.scala:112)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:383)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:195)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:164)
+	at scala.meta.internal.metals.Diagnostics.onSyntaxError(Diagnostics.scala:85)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$parseTreesAndPublishDiags$2(MetalsLanguageServer.scala:292)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	... 4 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 14: file:///D:/6th Sem/PPL/king.scala
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3104)
+	at java.net.URI$Parser.parse(URI.java:3052)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 19 more
+
+2022.04.26 21:36:27 WARN  no build target for: D:\6th Sem\PPL\king.scala
+Apr 26, 2022 9:36:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 133
+2022.04.26 21:36:30 INFO  time: code lens generation in 2.7s
+2022.04.26 21:36:30 INFO  time: code lens generation in 2.51s
+2022.04.26 21:36:30 INFO  time: code lens generation in 2.86s
+2022.04.26 21:36:30 INFO  time: code lens generation in 2.57s
+2022.04.26 21:36:30 INFO  time: code lens generation in 2.55s
+2022.04.26 21:36:30 INFO  time: code lens generation in 2.53s
+2022.04.26 21:36:30 INFO  time: code lens generation in 2.56s
+2022.04.26 21:36:30 INFO  time: code lens generation in 2.78s
+2022.04.26 21:36:30 INFO  time: code lens generation in 2.59s
+2022.04.26 21:36:30 INFO  time: code lens generation in 2.76s
+2022.04.26 21:36:30 INFO  time: code lens generation in 2.62s
+2022.04.26 21:36:30 INFO  time: code lens generation in 2.89s
+2022.04.26 21:36:30 INFO  time: code lens generation in 2.81s
+2022.04.26 21:36:30 INFO  time: code lens generation in 2.95s
+2022.04.26 21:36:30 INFO  time: code lens generation in 2.98s
+2022.04.26 21:36:30 INFO  time: code lens generation in 2.98s
+2022.04.26 21:36:30 INFO  time: code lens generation in 2.98s
+2022.04.26 21:36:30 INFO  time: code lens generation in 3.02s
+2022.04.26 21:36:30 INFO  time: code lens generation in 3.21s
+2022.04.26 21:36:30 INFO  time: code lens generation in 3.23s
+2022.04.26 21:36:30 INFO  time: code lens generation in 4m24s
+2022.04.26 21:36:30 INFO  time: code lens generation in 4m38s
+2022.04.26 21:36:30 INFO  time: code lens generation in 4m39s
+2022.04.26 21:36:30 INFO  time: code lens generation in 4m43s
+2022.04.26 21:36:30 INFO  time: code lens generation in 7m35s
+2022.04.26 21:36:30 INFO  time: code lens generation in 8m14s
+2022.04.26 21:36:30 INFO  time: code lens generation in 8m15s
+2022.04.26 21:36:30 INFO  time: code lens generation in 8m21s
+2022.04.27 16:33:27 INFO  shutting down Metals
